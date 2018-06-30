@@ -9,7 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', 'LaraBBS') - 青梅煮酒论坛</title>
-    <meta name="description" content="@yield('description', 'Laravel 爱好者社区')" />
+    <meta name="description" content="@yield('description', setting('seo_description', 'Laravel 爱好者社区。'))" />
+    <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'Laravel ，社区，论坛，青梅煮酒论坛，青梅煮酒，开发者论坛'))" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
